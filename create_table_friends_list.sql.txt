@@ -1,0 +1,7 @@
+
+
+
+CREATE TABLE IF NOT EXISTS `friends_list` (
+  `name` varchar(100) default NULL,
+  `uid` bigint(20) unsigned default NULL
+);
