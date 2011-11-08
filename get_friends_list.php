@@ -18,7 +18,7 @@
 		$mysqli = new mysqli();
 		
 
-//		Provide your DB credentials here
+                  //Provide your DB credentials here
 
 		// Connect to the database server and select a database
 		$mysqli->connect('your db server', 'your db id', 'your password', 'your db name');
