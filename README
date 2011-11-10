@@ -1,0 +1,20 @@
+This shows how one can extract Facebook friends’ list and store these details in a database. (Pls refer to Facebook for privacy policies regarding data extraction and staging. They do keep changing). This is based on Graph API which enables you to access data about Facebook social graphs (connections).
+ 
+Prerequisites:
+1.	You need to have a Facebook account and some connections/friends.
+2.	You have to register a Facebook app and provide callback url. You don’t really need to code any real word app. It is just entering some basic information on app creation page and providing callback URL as your own URL. e.g. http://nawendubharti.com
+
+When you download the code you see three php files. Facebook.php and Base_facebook.php are SDK files provided by Facebook. Get_friends_list.php has the logic for extracting and storing data in DB. SQL file has sql script for creating table.
+
+But before you proceed further please run the SQL script on database where you want to store the data.
+
+You need to place all php files in same folder. If you place SDK files in another folder you will need to change the path in Get_friends_list.php file accordingly.
+
+In Get_friends_list.php  you need to make following changes:
+1.	Update app id and app secret key which you got when you created your Facebook app.
+2.	Update Database details.
+3.	Update the call back URL which should be same as Get_friends_list.php file. E.g. if  Get_friends_list.php is in your root folder you need to have something like http://your URL/ Get_friends_list.php.    
+
+There are comments in the code to help you make changes in the code.
+
+
